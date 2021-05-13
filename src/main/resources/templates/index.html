@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
+  <style type="text/css">
+  h1,h2 {
+    padding-left: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 20px;
+    border-color: #aaaaaa;
+  }
+  </style>
 </head>
 <body>
   <div>
     <h1>HomeController:index</h1>
-    <hr />
-    <div>
+    <div>プロファイル名：<th:block th:text="${bean.profileName}"></th:block></div>
+
+    <div style="margin:20px;">
       <h2>Internal Links</h2>
-      <hr />
+
       <h3>UseCase</h3>
       <ul>
         <li><a href="./user-account/new">Sing Up</a></li>
